@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .other {
+            height: 100px;
+            background-color: #bdbdbd;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: #51ccee;
+            /*padding-top: 1px;*/
+            /*overflow: auto;*/
+        }
+        .childBox {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            /*float: left;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="other"></div>
+    <div class="box">
+        <div class="childBox"></div>
+    </div>
+    <script>
+
+//        let arr = {
+//          length:1000000
+//        };
+//        let sum1=0,sum2=0;
+
+
+        // console.time('for2');
+        // for (var i=0,len = arr.length; i<len; i++){
+        //   sum2+=i;
+        // };
+        // console.log('sum2',sum2);
+        // console.timeEnd('for2');
+
+
+        // console.time('for1');
+        // for (var i=0; i<arr.length; i++){
+        //   sum1+=i;
+        // };
+        // console.log('sum1',sum1);
+        // console.timeEnd('for1');
+
+        // let foo = function () {
+        //   this.name = 'xx';
+        //   this.age = 18;
+        // };
+        // foo.create = function () {
+        //   console.log('创建一个新对象');
+        // };
+        // foo.prototype.getName = function () {
+        //   console.log('名字:', this.name);
+        // };
+
+        // let fooT = function(){
+        //   this.gender = "nan";
+        // };
+        // fooT.prototype = foo.prototype;
+        // fooT.prototype.getG = function(){};
+
+
+        // let person = new foo();
+        //
+        // for(let key in person) {
+        //   if (person.hasOwnProperty(key)) {
+        //     console.log('key_self',key);
+        //   }else {
+        //     console.log('key_other',key);
+        //   }
+        // }
+
+        // var foo = function ({name='默认'} = {}) {
+        //     console.log(name)
+        // }
+        // foo({name:'ss'});
+
+        // let name = 'hu';
+        // const message = `hello ${name}, it's ${Date()} now`
+        // console.log('message',message);
+
+        let obj = {
+          name:'wsj',
+          age:18
+        }
+        let {name,age} = obj;
+        console.log('name',name);
+
+    </script>
+</body>
+</html>
